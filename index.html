@@ -2,68 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RapidFix IT – Incident Resolution Services</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RapidFix IT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="font-sans text-gray-800 bg-gray-50">
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="container">
-      <h1>RapidFix IT</h1>
-      <p>Your trusted partner in fast, reliable IT incident resolution.</p>
-      <a href="#contact" class="btn-primary">Request Support</a>
+  <!-- Navbar -->
+  <header class="bg-blue-600 text-white shadow">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">RapidFix IT</h1>
+      <nav>
+        <a href="#services" class="px-3 hover:text-yellow-300">Services</a>
+        <a href="#about" class="px-3 hover:text-yellow-300">Why Us</a>
+        <a href="#contact" class="px-3 hover:text-yellow-300">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Services Section -->
-  <section class="services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="service-list">
-        <div class="service-item">
-          <h3>24/7 Incident Response</h3>
-          <p>Immediate support for critical issues affecting your infrastructure or users.</p>
-        </div>
-        <div class="service-item">
-          <h3>Remote Troubleshooting</h3>
-          <p>Secure remote diagnostics and quick resolution of software and network problems.</p>
-        </div>
-        <div class="service-item">
-          <h3>Root Cause Analysis</h3>
-          <p>We identify the cause of recurring problems and prevent future incidents.</p>
-        </div>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 text-center">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold mb-4">Fast & Reliable IT Incident Resolution</h2>
+      <p class="text-lg mb-6">Your trusted partner in keeping your systems running smoothly.</p>
+      <a href="#contact" class="bg-yellow-400 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300">
+        Request Support
+      </a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">24/7 Incident Response</h3>
+        <p>Immediate support for critical issues affecting your infrastructure or users.</p>
       </div>
+      
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Remote Troubleshooting</h3>
+        <p>Secure remote diagnostics and quick resolution of software and network problems.</p>
+      </div>
+      
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Root Cause Analysis</h3>
+        <p>We identify the cause of recurring problems and prevent future incidents.</p>
+      </div>
+    
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="about">
-    <div class="container">
-      <h2>Why Choose RapidFix IT?</h2>
-      <p>We are a team of experienced IT professionals focused exclusively on solving incidents quickly and efficiently. With RapidFix IT, you minimize downtime, protect productivity, and gain peace of mind.</p>
+  <!-- Why Choose Us -->
+  <section id="about" class="bg-gray-100 py-16 px-6">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Why Choose RapidFix IT?</h2>
+      <p class="max-w-2xl mx-auto text-lg text-gray-700">
+        Our team of experienced IT professionals is dedicated to solving incidents quickly and efficiently. 
+        With RapidFix IT, you minimize downtime, protect productivity, and gain peace of mind.
+      </p>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Describe your issue..." required></textarea>
-        <button type="submit">Send Request</button>
-      </form>
-    </div>
+  <!-- Contact -->
+  <section id="contact" class="py-16 container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Contact Us</h2>
+    <form class="max-w-xl mx-auto bg-white shadow rounded-2xl p-8 space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300" />
+      <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300" />
+      <textarea placeholder="Describe your issue..." rows="4" class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300"></textarea>
+      <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">
+        Send Request
+      </button>
+    </form>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 RapidFix IT. All rights reserved.</p>
-    </div>
+  <footer class="bg-blue-900 text-white text-center py-6 mt-10">
+    <p>&copy; 2025 RapidFix IT. All rights reserved.</p>
   </footer>
 
 </body>
