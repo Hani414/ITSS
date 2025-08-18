@@ -9,7 +9,7 @@
 <body class="font-sans text-gray-800 bg-gray-50">
 
   <!-- Navbar -->
-  <header class="bg-blue-600 text-white shadow">
+  <header class="bg-blue-900 bg-opacity-80 text-white fixed top-0 left-0 w-full z-50 shadow">
     <div class="container mx-auto flex justify-between items-center p-4">
       <h1 class="text-2xl font-bold">RapidFix IT</h1>
       <nav>
@@ -20,33 +20,36 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 text-center">
-    <div class="container mx-auto">
-      <h2 class="text-4xl font-bold mb-4">Fast & Reliable IT Incident Resolution</h2>
-      <p class="text-lg mb-6">Your trusted partner in keeping your systems running smoothly.</p>
-      <a href="#contact" class="bg-yellow-400 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300">
-        Request Support
-      </a>
+  <!-- Hero Section with Background -->
+  <section class="relative bg-cover bg-center h-[90vh]" 
+           style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80');">
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+      <div class="text-center text-white px-6">
+        <h2 class="text-5xl font-bold mb-4">Fast & Reliable IT Incident Resolution</h2>
+        <p class="text-lg mb-6">Your trusted partner in keeping your systems running smoothly.</p>
+        <a href="#contact" class="bg-yellow-400 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300">
+          Request Support
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Services -->
-  <section id="services" class="py-16 container mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
+  <section id="services" class="py-20 container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
     <div class="grid md:grid-cols-3 gap-8">
       
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <div class="bg-white/90 backdrop-blur p-6 rounded-2xl shadow hover:shadow-lg transition">
         <h3 class="text-xl font-semibold mb-2">24/7 Incident Response</h3>
         <p>Immediate support for critical issues affecting your infrastructure or users.</p>
       </div>
       
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <div class="bg-white/90 backdrop-blur p-6 rounded-2xl shadow hover:shadow-lg transition">
         <h3 class="text-xl font-semibold mb-2">Remote Troubleshooting</h3>
         <p>Secure remote diagnostics and quick resolution of software and network problems.</p>
       </div>
       
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <div class="bg-white/90 backdrop-blur p-6 rounded-2xl shadow hover:shadow-lg transition">
         <h3 class="text-xl font-semibold mb-2">Root Cause Analysis</h3>
         <p>We identify the cause of recurring problems and prevent future incidents.</p>
       </div>
@@ -54,11 +57,13 @@
     </div>
   </section>
 
-  <!-- Why Choose Us -->
-  <section id="about" class="bg-gray-100 py-16 px-6">
-    <div class="container mx-auto text-center">
+  <!-- Why Choose Us with Background -->
+  <section id="about" class="relative bg-cover bg-center py-20 text-white" 
+           style="background-image: url('https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1600&q=80');">
+    <div class="absolute inset-0 bg-blue-900 bg-opacity-70"></div>
+    <div class="relative container mx-auto text-center px-6">
       <h2 class="text-3xl font-bold mb-6">Why Choose RapidFix IT?</h2>
-      <p class="max-w-2xl mx-auto text-lg text-gray-700">
+      <p class="max-w-2xl mx-auto text-lg">
         Our team of experienced IT professionals is dedicated to solving incidents quickly and efficiently. 
         With RapidFix IT, you minimize downtime, protect productivity, and gain peace of mind.
       </p>
@@ -66,7 +71,7 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-16 container mx-auto px-6">
+  <section id="contact" class="py-20 container mx-auto px-6">
     <h2 class="text-3xl font-bold text-center mb-10">Contact Us</h2>
     <form class="max-w-xl mx-auto bg-white shadow rounded-2xl p-8 space-y-4">
       <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg focus:ring focus:ring-blue-300" />
